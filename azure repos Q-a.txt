@@ -1,0 +1,222 @@
+Azure Repos :
+
+
+
+Source code : what developers are devloped for the application code.
+Source code managemnet : we can able to track the source code activities.
+
+
+
+1. What is your scm / vcs tools in your project?
+
+A. Azure repos and Git hub.
+
+---------------------------------------------------------------------------------
+2. what is the difference between the centarlized vcs and distrubuted vcs ?
+A. Centralized vcm                                                       Distributed vcm
+  
+   1.It is called as a client and server model.                          1.It is called offline model.  
+   2.Server needs to be always online.                                   2.not mandatory to be server online.
+   3.We can not track the application code changes.                      3.we can able to track the application code changes.
+   4.example: Subversions,team foundation server.                        4.example:git hub, azure repos,bit bucket,git label
+   5.Developer don't have a copy of the data.                            5.Each developer can have a copy of data.
+   6.All the code and versions are stored into remote repos.             6.All the codes and servers are stored into remote repos & local repos.
+
+
+---------------------------------------------------------------------------------
+3. what is git and github ?
+
+A. Git: Git is A software
+      :  Git is a Vesrion control
+      : we need to install in local system.
+      : we needs perform CLI operations
+      : By using we can able to track the changes.
+      : open source Licenes
+
+Git Hub : Github is a service.
+        : Github is a Vesrion control system.
+        : we can able to access via Internet ( www.github.com)
+        : we can able to perform GUI operations.
+        : we can able to store the Repositories.
+        : it supports both the Licenes like free and Enterprise.
+
+
+----------------------------------------------------------------------------------
+4. what are the git commends you are used in your project ? 
+
+A. Git init
+   Git add.
+   Git commit -m "commit id name" 
+   Git config --global user.email"email id"
+   Git config --global user.name"name"
+   Git branch <branch name>
+   Git checkout <branch name>
+   Git push origin main
+   Git remote -v
+   Git remote add origin
+   Git pull
+   Git fetch
+
+------------------------------------------------------------------------------------
+5. How to create a local repos / empty repos ?
+
+A.  Git init - iniatilized the empy Repositories & create a .git folder this will store the all the application acvities.
+   
+
+-----------------------------------------------------------------------------------------
+6. how to move your code from local to remote repos ?
+A. we have a 3 phases in Git.
+
+1. Working Area
+2. Staging Area
+3. Remote Repositories.
+
+How do you create a empty / Local Repositories : git Init.
+Git init - iniatilized the empy Repositories & create a .git folder this will store the all the application acvities 
+           history i.e. act as a Local database.
+Git add - git add --all ( including hidden files )
+          git add < filename >
+          git add . ( Except the Hidden files)
+Git status : 
+Git commit -m "Messgag" 
+Git config :
+   
+    Set your username: git config --global user.name "Lenka Sureshkumar"
+    Set your email address: git config --global user.email "sureshkumar@gmail.com"
+
+Git push origin main
+
+Practical Q
+--------------------------------------------------------------------------------------
+7. what is git pull ?
+A. To update your current HEAD branch with the latest changes from the remote server. This means that pull not only  downloads new data. it also  
+   directly integrates into your current working copy files.
+    
+   Git pull=git fetch+git merge
+
+
+-----------------------------------------------------------------------------------------
+8. what is git fetch ?
+
+A. Git fetch really only downloads new data from remote repository. but it does not integrate any of thisnew data into your working files.
+   fetch is great for getting a "fresh view" on all the things that happens in a remote repository.
+
+
+---------------------------------------------------------------------------------------
+9. what is git clone and git fork ?
+
+A. Any public git repository can be forked or cloned. a fork creats a completly independent copy of git repository. in contract to a fork, a git     clone creats a linked copy that will continue to sychronize with the target repository.
+
+
+
+----------------------------------------------------------------------------------------
+10.what is git push ?
+
+A. The git push commad is used to upload local repository content to a remote repository.
+
+
+--------------------------------------------------------------------------------------------
+11.what is git merge ?
+
+A. Git merge is git's way of putting a forked histoty back together again.
+
+
+--------------------------------------------------------------------------------------------
+12. how to crete a branch ?
+
+A . The git branch command can be used to create a new branch.
+   
+   Command : Git <Branch>
+
+--------------------------------------------------------------------------------------------
+13. how to switch from one btanch to another ?
+
+A.  Git checkout <branch name>
+
+--------------------------------------------------------------------------------------------
+14. what is the difference between the git merge and git rebase?
+
+A. 
+
+
+
+--------------------------------------------------------------------------------------------
+15. what is git stash ?
+
+
+A. It is  Temparary commit.
+   Git stash 
+   Git stash pop
+   Git stash clear
+   Git stash list
+
+
+
+--------------------------------------------------------------------------------------------
+16.what is pull request ?
+
+A.an event that takes place in software development when a contributor/developer is ready to begin the process of merging new code changes with the main project repository.
+
+
+
+
+
+--------------------------------------------------------------------------------------------
+17. what is branch policies ?
+
+
+
+With the help of branch policies we can able to restrict the developer changes combine into respective branches.
+
+we have a 4 types of branch policies are availble :
+
+1.Require a minimum number of reviewers
+2. Check for linked work items
+3. Check for comment resolution
+4. Limit merge types
+
+
+
+--------------------------------------------------------------------------------------------
+18.which branching stagies u are used in your project ?
+
+A.  we have a 3 ypes of branching stargies are availble . Those are 
+     1. Feature :
+      if any team member wants to work on particuer task,feature,issue then they will create a Feature Branch.
+      master
+      Dev ( Dev,Qa,UAT,Non prod)
+      Feature.
+
+    2. Bug fix :  when the  application code  haveing the issue then we can able to create a Bug branch and resolve the 
+                issue and combine the changes into Dev branch..
+
+    3. Hotfix : when the production application haveing the issue then we can able to create a Hotfix branch and resolve the 
+                issue and combine the changes into Dev branch.
+
+
+--------------------------------------------------------------------------------------------
+19.what is git conficlts & how u can able to reslove ?
+
+
+
+
+
+
+
+
+--------------------------------------------------------------------------------------------
+20.i want to push few of the commits into remote repos ? git checrry pik.
+
+
+
+
+
+--------------------------------------------------------------------------------------------
+21. what is branch security ?
+
+
+
+
+
+
+--------------------------------------------------------------------------------------------
